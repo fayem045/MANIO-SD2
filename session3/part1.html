@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Hyperlinks and Attributes</title>
+</head>
+<body>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+    </style>
+
+    <div align="right">
+        <a href="#scroll.down">scroll Down</a>
+    </div>
+    <!-- Hyperlinks -->
+     <!-- 1. Relative Links - these are links located in the local folder. -->
+     <!-- div(divprecation)- is just a conatiner; traversal: may want na file sa specific lalagyan -->
+     <div align="center" id="top">
+        <h1>Relative Link</h1>
+
+        <!-- A- ANCHO0R TAB; HREF(HYPERTEXT REFFERENCE) -->
+         <!-- ./ : means I want to traverse; crtl + click: can locate means even in vscode mismo -->
+        <a href="./sample1.html">Go to Sample 1</a>
+        <br>
+        <a href="./music/music.html">Go to Music Page</a>
+        <br>
+        <a href="./music/photo.html">Go to Photo Page</a>
+        <br>
+        <a href="./photo/logo/logo.html">Go to Logo Page</a>
+
+        <h3>Relative Link For Image</h3>
+
+        <!-- Attributes - changes the origin properties of an elements -->
+         <!-- auto- dedepende sa width na orig prop ni img -->
+        <img src="./photo/dog.jpg" alt="cute dog image" width="320" height="auto">
+
+<!-- absolute-link internte ma -->
+        <h3>Absolute Link for Image</h3>
+        <img src="https://cdn.britannica.com/34/235834-050-C5843610/two-different-breeds-of-cats-side-by-side-outdoors-in-the-garden.jpg" alt="cute cat" width="320" height="auto">
+      </div>
+<hr>
+<br><br>
+<!-- d pwede lagay attribute kasi d containe "p" -->
+<p id="lorem">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, repudiandae corporis illum beatae ea laboriosam sapiente laudantium eaque temporibus ullam pariatur at, assumenda culpa ex tempora animi nobis debitis voluptatem?
+Repellat soluta magni quam culpa ipsum, quis libero blanditiis! Eum magnam asperiores voluptates autem consectetur beatae maiores quos reprehenderit, sunt, similique fugiat impedit nisi unde. A omnis tempore natus saepe.
+Iure voluptatem provident, ducimus alias fugit accusamus molestias distinctio voluptate itaque, corrupti repudiandae. Voluptate eligendi suscipit odit, recusandae ab neque ad cumque veritatis earum sed accusantium corrupti consequatur incidunt quod!
+Minima sequi rem illum quae. Ullam illum facilis aperiam est. A mollitia nesciunt odit consequuntur, quaerat quo cumque eveniet. Suscipit perferendis sit ut. Corrupti adipisci non, quia vero rerum animi.
+Sint ratione, veniam officiis et architecto voluptatibus voluptates consectetur pariatur maxime accusamus eligendi eaque beatae debitis consequatur est fuga eveniet quae natus culpa non. Sit optio dolorem consequatur harum tempore.</p>
+<br><br>
+
+<hr>
+<br><br>
+
+<div align="center">
+<a href="https://en.wikipedia.org/wiki/Dog" target="_blank">
+<img src="./photo/dog.jpg">
+</a>
+
+</div>
+
+<br><br>
+<hr>
+
+<br><br>
+<div align="right" id="scroll.down"> 
+    <a href="#top">Got to Top</a>
+    <br>
+    <a href="#lorem">Go to Lorem</a>
+</div>
+</body>
+</html>

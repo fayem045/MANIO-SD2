@@ -1,0 +1,87 @@
+/* external css */
+/* !mportant: para prioty */
+/* h1 {
+    color: green !important;
+} */
+
+/* Universal Selector "*": lahat sa html*/
+
+*{
+    font-family: "Courier New",monospace;
+    font-size: 20px;
+}
+
+body{
+    background-color:rgb(101, 154, 175);
+}
+/* nav bar */
+/* Margin: ang space sa loob ng box
+padding: space sa loob ng box */
+
+nav{
+    background-color: aliceblue;
+    padding: 20px;
+}
+
+div{
+    float: right;
+}
+
+/* Type Selector - call the Tag */
+/* 2rem(32pixels) is begigger than 32rem */
+h1{
+    color: rgb(255, 255, 255) !important;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* vh(viewport height): kung gaano laki screeen. 100vh = 100% */
+section{
+    height: 200vh;
+    text-align: center;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+/* ID Selector - ma ssundan*/
+/* h3: lahat ng h3. Id: para d lahat ng h3 maapluan */
+#zuitt-motto{
+    letter-spacing: 5px;
+}
+/* class selector: kapag h3 lang */
+h3{
+    letter-spacing: 10px;
+}
+
+/* Adjacent selector: h3 + img(img under h3), kung ano ung nasa last na opperan(img) un maapplyan*/
+h3 + img{
+    height: 300px;
+    width: 300px;
+}
+
+/* tanggalin numbers */
+ol{
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Class selector: it will force html its cs to caps */
+.offering-item{
+    text-transform: uppercase;
+}
+
+/* DECENDACT SELECTOR */
+/* UNG CHILDREN NI BOOTCAMP */
+#bootcamp-learning-list li{
+    color: whitesmoke;
+}
+
+/* NO UNDERLINE: TEXT DECOR */
+a{
+    text-decoration: none;
+}

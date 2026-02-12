@@ -1,0 +1,35 @@
+/* bootstrap is powerful, but u can use !important */
+/* css:outside connect vs boostrap:inside ng html */
+/* unwanted spaces, use 8-unovesa;l spaces */
+
+*{
+margin: 0 !important;
+padding: 0 !important;
+box-sizing: border-box;
+}
+/* create new class */
+.heading{
+    color: rgb(50, 150, 196)
+}
+/* create new class */
+.heading-size{
+    font-size: 72px;
+}
+/* create new color */
+.text-purple{
+    color: rgb(175, 62, 209);
+}
+/* create new class */
+.heading-size{
+}
+.heading{
+    color: rgb(50, 150, 196)
+}
+
+.heading-size{
+    font-size: 72px;
+}
+/* create new color */
+.text-purple{
+    color: rgb(175, 62, 209);
+}

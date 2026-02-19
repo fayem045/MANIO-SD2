@@ -1,0 +1,10 @@
+*{
+    margin: 0 !important;
+    padding: 0;
+    box-sizing: border-box;     /* Lahat ng elements predict na naka-box */
+}
+
+.profile-image{
+    width: 300px;
+    height: auto;
+}

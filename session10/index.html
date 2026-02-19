@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display and Flex Properties</title>
+    <!-- BOOTSTRAP LINK -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body class="bg-dark text-light">
+    <h1>HTML Display and Flex Properties</h1>
+
+    <h3 class="display-4">Display Inline vs Block vs Inline-Block</h3>
+    
+    <!-- mt(margibn top) -->
+    <div class="bg-secondary p-3 mt-3 container rounded-3">
+        <!-- block -->
+        <p class="bg-primary p-3" style="width:100px; height:100px">Hello</p>
+        <p>Hello</p>
+        <p>Hello</p>
+        <p>By deafault, p tags has a display value of block</p>
+
+        <!-- span is IN-line: not resizable -->
+        <span class="bg-primary p-3" style="width:100px; height:100px">World</span>
+        <span>World</span>
+        <span>World</span>
+        <p>Span tags, by default, has daiplay value of line</p>
+    
+        <!-- "d-block":block ang inline -->
+        <!-- d-none: uneccessary image hide when in watch. ex: hamburger button -->
+        <!-- d-inline-block: nagtabi uli -->
+        <span class="d-inline-block bg-warning p-3" style="width:100px; height:100px">Hello World!</span>
+        <span>Hello World!</span>
+    </div>
+
+    <h3 class="display-4 mt-5">Display Flex and flex items</h3>
+    <div class="bg-secondary p-3 mt-4 container rounded-3">
+        <!-- d-flex:dikit-dikit 
+         justify-content-center: puynta center
+         justify-content-start: sa una
+         justify-content-end: sa dulo(left)-->
+        <div class="p-3; d-flex justify-content-center">
+            <span class="bg-primary p-3">Flex Item A</span>
+            <span class="bg-warning p-3">Flex Item B</span>
+            <span class="bg-primary p-3">Flex Item C</span>
+        </div>
+        <!-- flex-column: patayo
+        flex-row: pahiga -->
+        <div class="p-3; mt-2 d-flex justify-content-center flex-column">
+            <span class="bg-primary p-3">Flex Item A</span>
+            <span class="bg-warning p-3">Flex Item B</span>
+            <span class="bg-primary p-3">Flex Item C</span>
+        </div>
+        <!-- end ng container 2 -->
+        </div> 
+       
+    </div>
+
+    <!-- bootstrap scrip: for animations -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

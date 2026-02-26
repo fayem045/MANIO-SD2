@@ -5,14 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="./index.css">
 
         <title>Bootstrap - Layout and Best Practices</title>
 
     </head>
     <body>
-        <nav id="navbar" class="p-4 d-flex flex-row bg-dark border-3 shadow border-bottom border-primary border-4 sticky-top text-light">
-            <div class="me-auto fw-bold ">My Website</div>
-            <div id="navlinks" class="d-flex flew-row gap-3">
+        <nav id="navbar" class="p-4 fw-100 d-flex flex-row bg-dark border-3 shadow border-bottom border-warning border-4 sticky-top text-light">
+            <div class="me-auto fw-bold fs-2 text-darker-warning">My Website</div>
+            <div id="navlinks" class="d-flex flew-row gap-3 fs-5">
                 <div>About</div>
                 <div>Services</div>    
             </div>      
@@ -20,53 +21,66 @@
         </div>
 
         <!-- Banner Section -->
-        <section id="banner" class="bg-primary-subtle d-flex  flex-column justify-content-center align-items-center- p-3 p-lg-5 rounded-4 shadow border-1 borter bottom border-primary">
+        <section id="hvr-darker-warning" class="container-fluid min-vh-100 bg-dark text-darker-warning d-flex  flex-column justify-content-center align-items-center p-3 p-lg-5 rounded-4 shadow border-1 border-bottom text-center">
             <h1 class="mb-3 display-3 fw-bold">Welcome to My Website</h1>
             <p class="mb-3 display-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </section>
 
 
         <!-- About Section -->
-        <section id="about" class="my-3 mt-lg-5 d-flex justify-content-center">
+        <section id="about" class="container-fluid min-vh-100 my-3 mt-lg-5 d-flex justify-content-center">
             <div id="about-row" class="row d-flex justify-content-center align-items-center">
                 <div id="about-col-1" class="col-12 col-lg-4">
-                    <h2 class="display-5 fw-bold text-primary mb-3">About Us</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt nisi et sem eleifend aliquet. Fusce interdum rutrum ipsum, non feugiat risus consectetur eu. Nulla sodales orci et mi ultrices, at mattis leo gravida. Curabitur non dapibus orci.</p>
+                                     <h2 class="display-2 fw-bold text-darker-warning mb-3">About Us</h2>
+
+                    <img src="https://res.cloudinary.com/dneeqo5vq/image/upload/v1708477409/2024-Maserati-GranTurismo-Review-550x350_gopzhy.jpg" 
+                   class="img-fluid border-darker-warning  rounded-4  my-10 shadow border-1 p-1 justify-content-center" >
+
+                    
                 </div>
-                <div id="about-col-2" class="col-12 col-lg-4">
-                    <img src="https://res.cloudinary.com/dneeqo5vq/image/upload/v1708477409/2024-Maserati-GranTurismo-Review-550x350_gopzhy.jpg" class="img-fluid rounded-5 border-5 border-bottom bottom-warning">
+
+                <div id="about-col-2" class="col-12 col-lg-4  border-2 border-primary rounded-4 shadow p-3">
+
+                    <p class="fs-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt nisi et sem eleifend aliquet. Fusce interdum rutrum ipsum, non feugiat risus consectetur eu. Nulla sodales orci et mi ultrices, at mattis leo gravida. Curabitur non dapibus orci.</p>
                 </div>
+                
             </div>
         </section>
 
         <!-- Services Section -->
-        <section id="section" class="bg-dark">
+        <section id="section" class="bg-dark container-fluid min-vh-50 text-light">
+
+            <!-- sec1 -->
             <div id="section-row">
-                <div id="section-col-1" class="my-3 mt-lg-5 d-flex justify-content-center align-items-center p3 my-5 p-3 text-light">
+                <div id="section-web-dev" class="my-3 mt-lg-5 d-flex justify-content-start align-items-center p3 my-5 p-3 text-light">
                     <div id="section-web-dev">
-                        <h3 class="text-primary border-start border-primary border-5 ps-3 text-light mx-0 mx-lg-3 my-3 my-lg-0">Web Development</h3>
-                        <p>We provide professional web development services.</p>
+                        <h3 class="text-primary border-start border-warning border-5 ps-3 text-light mx-0 mx-lg-3 my-3 my-lg-0 display-5">Web Development</h3>
+                        <p class="fs-3 text-warning text-opacity-75">We provide professional web development services.</p>
                     </div>
                 </div>
 <!-- text1-->
-                <div id="section-col-2"class="d-flex mt-5">
-                    <div id="section-design" class=" mt-5 text-center border-start border-primary border-5 ps-3 text-light">
-                        <h3>Graphic Design</h3>
-                        <p>Our talented designers create stunning graphics for your brand.</p>
+                <div id="section-row" >
+                    <div id="section-design"  class="my-3 mt-lg-5 d-flex justify-content-center align-items-center p3 my-5 p-3 text-light">
+                        <div id="section-design">
+                        <h3 class="text-primary border-start border-warning border-5 ps-3 text-light mx-0 mx-lg-3 my-3 my-lg-0 display-5">Graphic Design</h3>
+                        <p class="fs-3 text-warning text-opacity-75">Our talented designers create stunning graphics for your brand.</p>
+                        </div>
                     </div>
                 </div>
 <!-- text2 -->
-                <div id="section-col-3" class=" mt-5 text-center border-start border-primary border-5 ps-3 text-light mx-0 mx-lg-3 my-3 my-lg-0" >
-                    <div id="section-marketing">
-                        <h3>Digital Marketing</h3>
-                        <p>We help businesses grow their online presence.</p>
+                <div id="section-row">
+                    <div id="section-marketing"  class="my-3 mt-lg-5 d-flex justify-content-end align-items-center p3 my-5 p-3 text-light">
+                        <div id="section-marketing-content">
+                        <h3 class=" border-start border-warning border-5 ps-3 text-light mx-0 mx-lg-3 my-3 my-lg-0 display-5">Digital Marketing</h3>
+                        <p class="fs-3 text-warning text-opacity-75">We help businesses grow their online presence.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Footer -->
-        <footer id="footer">
+        <footer id="footer" class="bg-dark text-warning d-flex flex-row p-5 border-3 shadow border-bottom border-primary border-4 justify-content-center align-items-center gap-3">
             <div>&copy;  2023 My Website.</div>
             <div>|</div>
             <div>All rights reserved.</div>

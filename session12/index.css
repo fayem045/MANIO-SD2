@@ -1,4 +1,26 @@
-#NavBar > div > a {
-    font-size: 2rem;
-    font-weight: bold;
-}   
+.darker-warning {
+    background-color: #E6B800; 
+    color: #000000; 
+}
+
+.border-darker-warning {
+    background-color: #E6B800; 
+    color: #000000;
+}
+
+.text-darker-warning {
+    color: #E6B800;
+}
+
+.border-darker-warning {
+    border: 2px solid #E6B800;
+}
+.border-darker-warning-rtl {
+    border-inline-start: 4px solid #E6B800;
+}
+
+#hvr-darker-warning:hover {
+    background-color: #D4AF37 !important;
+    color: #000 !important;
+    transition: 0.3s ease;
+}

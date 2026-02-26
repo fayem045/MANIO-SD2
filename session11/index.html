@@ -10,7 +10,7 @@
 <body>
 <!-- Nav bar Start -->
     <div class="p-4 bg-dark shadow border-bottom border-primary border-4 sticky-top" id="NavBar">
-        <div class=" d-flex flew-row">
+        <div >
     <a class="text-decoration-none fw-bold me-auto text-light">DEVPotfolio</a>
         
         <!-- text-decoration-none: pamapatanggal linme sa link or anchor -->
@@ -25,14 +25,14 @@
 <!-- Nav Bar end -->
 </div>
 <!-- PRIFILE START -->
- <div class="bg-dark container-fluid p-3 p-lg-5 text-light">
+ <div class="bg-dark container-fluid p-3 p-lg-5 text-light" >
 <!-- align-item-center : yaxis -->
-        <div class="d-flex flex-column justify-content-center align-items-center p-3 p-lg-5"> 
+        <div class="d-flex flex-column justify-content-center align-items-center p-3 p-lg-5" id="profileContainer"> 
             <img src="https://img.freepik.com/premium-photo/portrait-stoic-marcus-aurelius-black-white-film-grain-highly-detailed-masterpiece_1097265-29435.jpg?w=360" class="img-fluid w-50 bg-primary rounded-circle p-3 my-5">
             <!-- my: x and y axis -->
                 <h3 class="display-4 fw-bold ">Marcus Aurelius</h3>
                 <h5 class="display-6 mt-2 ">  Roman Emperor and a  Philosopher</h5>
-                <p class="col-12 mt-5 text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque eligendi dolorem, dolorum nostrum velit quos quod accusamus, magnam debitis quia, nihil odit pariatur odio iure laudantium. Deserunt vero doloribus quaerat, adipisci doloremque expedita, facere esse animi dolor dolorum recusandae enim, tempore reiciendis inventore numquam eaque eligendi placeat officia minima excepturi?</p>
+                <p class="col-12 mt-5 text-center">Roman emperor and Stoic philosopher known as the “Philosopher King.” Ruling from 161 to 180 CE, he led Rome through wars and crises with discipline and integrity. His writings, compiled as Meditations, reflect wisdom, self-control, duty, and resilience in leadership and life.</p>
         </div>
     </div>
     <!-- RECOGNITION STARTR -->
@@ -40,7 +40,7 @@
         <div class="d-flex">
     <div class="row">
         <!-- 12:small; 4: small above -->
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-4" id="hovercon">
 
             <div id="recognition-1 p-3" class="text-center p-3 border border-2 border-primary rounded-4">
                 <p class="fw-bold mb-2">One of the “Five Good Emperors”</p>
@@ -50,7 +50,7 @@
         </div>
         <!-- 2ndcol 
         mx-0 mx-lg-3 my-3 my-lg-0: for small devices-->
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-4" id="hovercon">
             <div id="recognition-2 p-3"class="text-center p-3 border border-2 border-primary rounded-4 mx-0 mx-lg-3 my-3 my-lg-0">
                 <p class="fw-bold mb-2">Literary and Philosophical Legacy Recognition</p>
                 <p>Through his work Meditations, Marcus Aurelius earned lasting recognition as one of history’s most influential Stoic philosophers, a timeless masterpiece that continues to shape leadership, ethics, and personal discipline worldwide..</p>
@@ -58,7 +58,7 @@
             </div>
         </div>
 <!-- 3rd -->
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-4" id="hovercon">
             <div id="recognition-3 p-3" class="text-center p-3 border border-2 border-primary rounded-4">
                 <p class="fw-bold mb-2">Model of the Philosopher-King</p>
                 <p>Marcus Aurelius is remembered as the real-life example of Plato’s ideal “philosopher-king.” His leadership combined military strength, wisdom, discipline, humility, and deep moral reflection, making him a symbol of ethical leadership.</p>
@@ -72,23 +72,23 @@
     <!-- RECOG END -->
 </div>
 <!-- THIRD SEC START -->
- <!-- vh: whole size screen kuha. using min-vh-100: minimum of 100% of screen can adjust acording sa content -->
+<!-- vh: whole size screen kuha. using min-vh-100: minimum of 100% of screen can adjust acording sa content -->
     <div class="bg-dark min-vh-100 p-5">
         <div class="d-flex">
             <h1 class="display-4 fw-bold text-light border-start border-primary border-5 ps-3 ">Projects</h1>
             
         </div>
 
-         <div id="proj-1 p-1 " class=" mt-5 text-center p-2 border border-2 border-primary rounded-4  text-light">
+        <div id="proj-1 p-1 " class="mt-5 text-center p-2 border border-2 border-primary rounded-4  text-light ">
             <h4 class="fw-bold mb-3 mt-3 ">Principled Governance with his Stoic Wisdom</h4>
             </div>
-                   <ul class="text-light text-center-justify mt-3">
+                <ul class="text-light text-center-justify mt-3">
                     <li> Treated citizens fairly, avoiding favoritism.</li>
                     <li>Placed the empire’s needs above comfort or luxury.</li>
                     <li> Managed wars, plagues, and rebellions with composure and rationality.</li>
                     <li> Enforced laws with fairness, aligning with Stoic principles of virtue.</li>
                     <li> Prioritized public welfare and stability over personal ambition.</li>
-                   </ul>
+                </ul>
 
 
                         <div class="d-flex mt-5">
@@ -97,35 +97,35 @@
                         <div id="proj-2 p-3 " class=" mt-5 text-center border-start border-primary border-5 ps-3 text-light">
             <p class="fw-bold mb-6">Medidation</p>
             </div>
-                  <ul class="text-light mt-3">A collection of personal reflections and Stoic philosophy Written as private notes, not meant for publication.Divided into 12 books.Focuses on virtue, discipline, mortality, resilience, and duty</ul>
+                <ul class="text-light mt-3">A collection of personal reflections and Stoic philosophy Written as private notes, not meant for publication.Divided into 12 books.Focuses on virtue, discipline, mortality, resilience, and duty</ul>
 
                         <!-- proj3 -->
                         <div id="proj-3 p-3 " class=" mt-5 text-center border-start border-primary border-5 ps-3 text-light mx-0 mx-lg-3 my-3 my-lg-0">
             <p class="fw-bold mb-2">Commanded Rome During the Marcomannic Wars</p>
             </div>
-                           <ul class="text-light">He led major military campaigns against Germanic tribes along the Danube frontier (the Marcomannic Wars, 166–180 AD), personally commanding troops despite difficult conditions.</ul>
+                        <ul class="text-light">He led major military campaigns against Germanic tribes along the Danube frontier (the Marcomannic Wars, 166–180 AD), personally commanding troops despite difficult conditions.</ul>
                         
         </div>
 
         <!-- fixed need -->
-         <div id="proj-1 p-3 " class=" mt-5 text-center p-3 border border-2 border-primary rounded-4  text-light flex-column">
+        <div id="proj-1 p-3 " class=" mt-5 text-center p-3 border border-2 border-primary rounded-4  text-light flex-column">
             <h4 class="fw-bold mb-2">Letters</h4>
             </div>
-               <div class="col-12 justify-content-center me-5 align-items-center d-flex flex-column flex-md-row ">
+            <div class="col-12 justify-content-center me-5 align-items-center d-flex flex-column flex-md-row ">
 
-             <p class="text-light col-6">A private collection of Stoic reflections across 12 books, emphasizing virtue, discipline, resilience, duty, and the nature of life, written for personal guidance rather than publication.</p>
-         
-             <div class="image-wrapper position-relative d-inline-block col-6" style="max-width: 300px;">
-                   <img src="https://pbs.twimg.com/media/C-V6-RaUwAEVQDB.jpg"  class="mb-3 me-3 rounded image1"  style="max-width: 80%">
-                   <!-- me-2: right margin space imgs. ms sa left -->
-                <img class="img-fluid position-absolute top-0 start-0 image2" style="max-width: 80%" src="https://romanempiretimes.com/content/images/size/w1600/2024/09/Arethas-of-Caesarea-manuscript-Meditations-Marcus-Aurelius-1.jpg
+            <p class="text-light col-6">A private collection of Stoic reflections across 12 books, emphasizing virtue, discipline, resilience, duty, and the nature of life, written for personal guidance rather than publication.</p>
+
+            <div class="image-wrapper position-relative d-inline-block col-6" style="max-width: 300px;">
+                <img src="https://pbs.twimg.com/media/C-V6-RaUwAEVQDB.jpg"  class="mb-3 me-3 rounded image1"  style="max-width: 80%">
+                <!-- me-2: right margin space imgs. ms sa left -->
+                <img class="img-fluid position-absolute top-0 start-0 image2" style="max-width: 90%" src="https://romanempiretimes.com/content/images/size/w1600/2024/09/Arethas-of-Caesarea-manuscript-Meditations-Marcus-Aurelius-1.jpg
                 ">
             </div>                       
             </div>
 
         </div>
     </div>
- <!-- THIRD SEC END -->
+<!-- THIRD SEC END -->
 
 <!-- PROFILE END -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>

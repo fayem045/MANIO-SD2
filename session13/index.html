@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Comnponents</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- NAVBAR START -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary shadow sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand fw-bold text-primary" href="#">YourDevADA</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- "ms(margin start): naglagay sa left kaya natulak agad " -->
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Contacts</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+</nav>
+    <!-- NAVBAR END -->
+
+    <!-- ABOUT START -->
+     <!-- !!!CANT USE: justify-content-center align-items-center IF USINGT CONTAINER. dapat dfelx -->
+        <div class="d-flex flex-column p-2 p-md-5 justify-content-center align-items-center" id="about">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-3066352.jpg?crop=1xw:1.0xh;center,top&resize=640:*" class="img-fluid col-8 col-md-4 my-4 rounded-circle border-5 border-primary border p-3 p-md-5">
+
+            <h1 class="display-3 fw-bold text-primary border-1 border-bottom border-primary-subtle pb-4">Ada Lovelace</h1>
+            <h3 class="display-6 text-secondary">Software Engineer</h3>
+
+            <P class="text-center col-12 col-md-6 my-4">The Americans with Disabilities Act (ADA), signed into law in 1990, stands as a cornerstone of U.S. civil rights legislation designed to protect individuals with disabilities from discrimination. This comprehensive law ensures that people with disabilities have the same rights and opportunities as everyone else across all sectors of public life. It specifically covers a wide array of physical and mental impairments that might substantially limit major life activities, such as walking, seeing, or working. By providing a clear legal framework, the act prohibits unfair treatment in schools, workplaces, and various government programs. Ultimately, its primary goal is to foster an inclusive society where disability does not serve as a barrier to personal or professional success. <br><br>
+
+            To achieve these goals, the ADA mandates specific standards for accessibility in both employment and public infrastructure. Employers are required to provide reasonable accommodations to qualified workers, ensuring that the workplace remains functional for everyone. Public spaces must also meet strict physical requirements, which is why features like wheelchair ramps, elevators, and braille signage are now standard in modern buildings. Beyond physical access, the law also addresses telecommunications and public transportation to ensure that mobility and communication are seamless for all citizens. These mandates transform the abstract concept of "equal opportunity" into tangible changes that allow individuals to navigate their communities with dignity and independence.
+
+            </P>
+        </div>
+    <!-- ABOUT END -->
+
+    <!-- PROJECT STARTS -->
+     <!-- parent contai8ner: may flex,center. SUB CONTAINE. crc sa row and column -->
+    <div class="bg-primary p-2 p-md-5 d-flex justify-content-center align-itens-center">
+            <div class="row">
+                <div class="col-12 col-md-4">   
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBWbQid0AbWqBgEFAExjsQ7pxsyUzaB0Wb2A&s" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Note G</h5>
+                            <p class="card-text">Ada Lovelace’s "Note G," published in 1843, is considered the first computer algorithm, designed to compute Bernoulli numbers on Charles Babbage’s Analytical Engine. It is a highly detailed, 25-step, multi-loop program demonstrating that machines could manipulate symbols rather than just numbers, proving they could handle complex, non-numerical tasks.</p>
+                            <a href="#" class="btn btn-secondary">Read Full</a>
+                        </div>
+                        </div>
+
+                </div>
+                <!-- 2nd -->
+                <div class="col-12 col-md-4">   
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBWbQid0AbWqBgEFAExjsQ7pxsyUzaB0Wb2A&s" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Note G</h5>
+                            <p class="card-text">Ada Lovelace’s "Note G," published in 1843, is considered the first computer algorithm, designed to compute Bernoulli numbers on Charles Babbage’s Analytical Engine. It is a highly detailed, 25-step, multi-loop program demonstrating that machines could manipulate symbols rather than just numbers, proving they could handle complex, non-numerical tasks.</p>
+                            <a href="#" class="btn btn-secondary">Read Full</a>
+                        </div>
+                        </div>
+                        <!-- 3rd -->
+                        <div class="col-12 col-md-4">   
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBWbQid0AbWqBgEFAExjsQ7pxsyUzaB0Wb2A&s" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Note G</h5>
+                            <p class="card-text">Ada Lovelace’s "Note G," published in 1843, is considered the first computer algorithm, designed to compute Bernoulli numbers on Charles Babbage’s Analytical Engine. It is a highly detailed, 25-step, multi-loop program demonstrating that machines could manipulate symbols rather than just numbers, proving they could handle complex, non-numerical tasks.</p>
+                            <a href="#" class="btn btn-secondary">Read Full</a>
+                        </div>
+                        </div>
+
+                </div>
+                </div>
+            </div>
+    </div>
+
+    <!-- PROJECT END -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

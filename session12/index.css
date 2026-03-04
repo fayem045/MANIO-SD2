@@ -12,7 +12,7 @@
     color: #E6B800;
 }
 
-.border-darker-warning {
+.borderoustide-darker-warning {
     border: 2px solid #E6B800;
 }
 .border-darker-warning-rtl {
@@ -23,4 +23,8 @@
     background-color: #D4AF37 !important;
     color: #000 !important;
     transition: 0.3s ease;
+}
+h2 {
+  color:  #D4AF37 ;
+  text-shadow: 2px 2px 4px #000000;
 }

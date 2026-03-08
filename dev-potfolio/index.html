@@ -8,6 +8,10 @@
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="./index.css">
         <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+        <!-- Bootstrap Icons -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+        <!-- Font Awesome for brand icons like Viber -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pbSf7YF2Y8aBDO+9kM8j9h6yjefm5N0qQZOiK6ewc8Y2uVZU3lVQmRo/l6zK8D8n9Gd4Pv7y3MVpVQxZhyP4tw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 		<title>Developer Portfolio</title>
 
@@ -97,7 +101,7 @@
     <!-- ABOUT ME END -->
 
     <!-- TOOLS START -->
-   <div class="d-flex p-3 p-md-5 flex-column justify-content-center align-items-center bg-dark">
+   <div class="d-flex p-3 p-md-5 flex-column justify-content-center align-items-center bg-dark vh-100" id="tools">
 
 <svg viewBox="0 0 800 120">
 <text x="50%" y="50%" dy=".35em" text-anchor="middle" class="circuit">Tools I use</text>
@@ -108,45 +112,152 @@
 <div class="row g-4 justify-content-center">
 
 <!-- 1 -->
-<div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/500px-HTML5_logo_and_wordmark.svg.png"
-class="tools img-fluid border border-primary border-2 rounded-3 bg-dark p-3 p-md-4"
-style="max-height:120px; object-fit:contain;">
+ <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+  <a href="#" class="d-block text-decoration-none p-1">
+    <div class="card bg-dark text-white tool-card border border-primary rounded-3">
+      <div class="tool-inner">
+        <div class="tool-front">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/500px-HTML5_logo_and_wordmark.svg.png" class="card-img tools" alt="HTML5" style="max-height:120px; object-fit:contain;">
+          <div class="card-img-overlay d-flex align-items-end p-0">
+            <span class="w-100 text-center bg-black bg-opacity-50 py-1">HTML5</span>
+          </div>
+        </div>
+      </div>
+      <div class="tool-back-container">
+        <div class="tool-back">
+          <p class="text-white mb-0">HyperText Markup Language: The standard markup language that provides the basic structure and content for web documents.</p>
+        </div>
+      </div>
+    </div>
+  </a>
 </div>
 
+
+
 <!-- 2 -->
-<div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
-<img src="https://static.vecteezy.com/system/resources/previews/067/565/470/non_2x/bootstrap-logo-rounded-free-png.png"
-class="tools img-fluid border border-primary border-2 rounded-3 bg-dark p-3 p-md-4"
-style="max-height:120px; object-fit:contain;">
+<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+  <a href="#" class="d-block text-decoration-none p-1">
+    <div class="card bg-dark text-white tool-card border border-primary rounded-3">
+      <div class="tool-inner">
+        <div class="tool-front">
+          <img src="https://static.vecteezy.com/system/resources/previews/067/565/470/non_2x/bootstrap-logo-rounded-free-png.png" class="card-img tools" alt="Bootstrap" style="max-height:120px; object-fit:contain;">
+          <div class="card-img-overlay d-flex align-items-end p-0">
+            <span class="w-100 text-center bg-black bg-opacity-50 py-1">Bootstrap</span>
+          </div>
+        </div>
+      </div>
+      <div class="tool-back-container">
+        <div class="tool-back">
+          <p class="text-white mb-0">CSS Framework: A free and open-source CSS framework directed at responsive, mobile-first front-end web development.</p>
+        </div>
+      </div>
+    </div>
+  </a>
 </div>
 
 <!-- 3 -->
-<div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
-<img src="https://cdn-icons-png.freepik.com/256/5968/5968242.png?semt=ais_white_label"
-class="tools img-fluid border border-primary border-2 rounded-3 bg-dark p-3 p-md-4"
-style="max-height:120px; object-fit:contain;">
+<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+  <a href="#" class="d-block text-decoration-none p-1">
+    <div class="card bg-dark text-white tool-card border border-primary rounded-3">
+      <div class="tool-inner">
+        <div class="tool-front">
+          <img src="https://cdn-icons-png.freepik.com/256/5968/5968242.png?semt=ais_white_label" class="card-img tools" alt="CSS" style="max-height:120px; object-fit:contain;">
+          <div class="card-img-overlay d-flex align-items-end p-0">
+            <span class="w-100 text-center bg-black bg-opacity-50 py-1">CSS</span>
+          </div>
+        </div>
+      </div>
+      <div class="tool-back-container">
+        <div class="tool-back">
+          <p class="text-white mb-0">Cascading Style Sheets: A stylesheet language used for describing the presentation of a document written in HTML or XML.</p>
+        </div>
+      </div>
+    </div>
+  </a>
 </div>
 
 <!-- 4 -->
-<div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
-<img src="https://static.vecteezy.com/system/resources/previews/048/332/150/non_2x/java-programming-language-java-logo-free-png.png"
-class="tools img-fluid border border-primary border-2 rounded-3 bg-dark p-3 p-md-4"
-style="max-height:120px; object-fit:contain;">
+<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+  <a href="#" class="d-block text-decoration-none p-1">
+    <div class="card bg-dark text-white tool-card border border-primary rounded-3">
+      <div class="tool-inner">
+        <div class="tool-front">
+          <img src="https://static.vecteezy.com/system/resources/previews/048/332/150/non_2x/java-programming-language-java-logo-free-png.png" class="card-img tools" alt="Java" style="max-height:120px; object-fit:contain;">
+          <div class="card-img-overlay d-flex align-items-end p-0">
+            <span class="w-100 text-center bg-black bg-opacity-50 py-1">Java</span>
+          </div>
+        </div>
+      </div>
+      <div class="tool-back-container">
+        <div class="tool-back">
+          <p class="text-white mb-0">Programming Language: A high-level, class-based, object-oriented programming language designed for simplicity and readability.</p>
+        </div>
+      </div>
+    </div>
+  </a>
 </div>
 
 <!-- 5 -->
-<div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/960px-Visual_Studio_Code_1.35_icon.svg.png"
-class="tools img-fluid border border-primary border-2 rounded-3 bg-dark p-3 p-md-4"
-style="max-height:120px; object-fit:contain;">
+<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+  <a href="#" class="d-block text-decoration-none p-1">
+    <div class="card bg-dark text-white tool-card border border-primary rounded-3">
+      <div class="tool-inner">
+        <div class="tool-front">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/960px-Visual_Studio_Code_1.35_icon.svg.png" class="card-img tools" alt="VS Code" style="max-height:120px; object-fit:contain;">
+          <div class="card-img-overlay d-flex align-items-end p-0">
+            <span class="w-100 text-center bg-black bg-opacity-50 py-1">VS Code</span>
+          </div>
+        </div>
+      </div>
+      <div class="tool-back-container">
+        <div class="tool-back">
+          <p class="text-white mb-0">Code Editor: A lightweight but powerful source code editor that runs on your desktop and is available for Windows, macOS, and Linux.</p>
+        </div>
+      </div>
+    </div>
+  </a>
 </div>
 
 <!-- 6 -->
-<div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
-<img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/autocad-icon.png"
-class="tools img-fluid border border-primary border-2 rounded-3 bg-dark p-3 p-md-4"
-style="max-height:120px; object-fit:contain;">
+<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+  <a href="#" class="d-block text-decoration-none p-1">
+    <div class="card bg-dark text-white tool-card border border-primary rounded-3">
+      <div class="tool-inner">
+        <div class="tool-front">
+          <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/autocad-icon.png" class="card-img tools" alt="AutoCAD" style="max-height:120px; object-fit:contain;">
+          <div class="card-img-overlay d-flex align-items-end p-0">
+            <span class="w-100 text-center bg-black bg-opacity-50 py-1">AutoCAD</span>
+          </div>
+        </div>
+      </div>
+      <div class="tool-back-container">
+        <div class="tool-back">
+          <p class="text-white mb-0">Design Software: A computer-aided design (CAD) software used for creating precise 2D and 3D models.</p>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+<!-- 6 -->
+<div class="col-6 col-sm-4 col-md-3 col-lg-2">
+  <a href="#" class="d-block text-decoration-none p-1">
+    <div class="card bg-dark text-white tool-card border border-primary rounded-3">
+      <div class="tool-inner">
+        <div class="tool-front">
+          <img src="https://tse3.mm.bing.net/th/id/OIP.Qn6gmGACD-A9kWW8LEPJnwAAAA?pid=Api&P=0&h=180" class="card-img tools" alt="Circuit Wizard" style="max-height:120px; object-fit:contain;">
+          <div class="card-img-overlay d-flex align-items-end p-0">
+            <div class="w-100 text-center bg-black bg-opacity-50">Circuit Wizard</div>
+          </div>
+        </div>
+      </div>
+      <div class="tool-back-container">
+        <div class="tool-back">
+          <p class="text-white mb-0">Circuit Design Software: A tool for creating and simulating electronic circuits.</p>
+        </div>
+      </div>
+    </div>
+  </a>
 </div>
 
 </div>
@@ -1006,36 +1117,53 @@ Creation of hardware projects, such as a implementation of Integrated Circuit, a
 <!-- modal end -->
 
 <!-- Contact Section Start -->
-    <div id="connect" class="bg-dark container-fluid d-lg-flex align-items-center justify-content-center bg-light mt-md-5 text-center min-vh-100 w-100 sm-h-100 text-light">
-        <div class="d-flex flex-lg-row flex-column flex-md-column w-100 container-lg align-items-center justify-content-center">
-            <div class="col col-lg-6 sm-mb-5 mb-lg-0 h-100">
-                <iframe class="d-inline-block shadow border-0 map-height-default map-height-sm mt-3 mb-3 w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d493242.1994801147!2d120.65385799999999!3d15.02294655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396f4848d776319%3A0x55a57880b7da26f8!2sPampanga!5e0!3m2!1sen!2sph!4v1772709165586!5m2!1sen!2sph" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="col col-lg-6 mb-3 border border-primary">
-                <div class="d-flex flex-column w-100 h-100 bg-white p-1 p-lg-4 rounded shadow">
-                    <div class="col text-dark ">
-                        <h1 id="connect-title" class="hover-line text-dark font-weight-bolder display-6 text-left border-dark border-bottom d-inline-block mb-3 mb-lg-4 h1-connect pb-3 pt-5">CONTACT ME</h1>
+    <div id="connect" class="container-fluid bg-light mt-md-5 py-5">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <!-- map column -->
+                <div class="col-12 col-lg-6">
+                    <div class="card shadow-sm">
+                        <div class="card-body p-0">
+                            <iframe class="w-100" style="height:300px; border:0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d493242.1994801147!2d120.65385799999999!3d15.02294655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396f4848d776319%3A0x55a57880b7da26f8!2sPampanga!5e0!3m2!1sen!2sph!4v1772709165586!5m2!1sen!2sph" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
                     </div>
-                    <div class="col w-100 text-dark">
-                        <form class="text-dark text-left font-weight-bold">
-                            <div class="form-group ">
-                                <label for="exampleFormControlInput1">Full Name</label>
-                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Full Name" required>
+                </div>
+                <!-- form + socials column -->
+                <div class="col-12 col-lg-6">
+                    <div class="card shadow-sm p-4">
+                        <h2 class="fw-bold mb-3">Contact Me</h2>
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label" for="contact-name">Full Name</label>
+                                <input type="text" id="contact-name" class="form-control" placeholder="Your name" required>
                             </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlInput1">Email address</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email" required>
+                            <div class="mb-3">
+                                <label class="form-label" for="contact-email">Email address</label>
+                                <input type="email" id="contact-email" class="form-control" placeholder="you@example.com" required>
                             </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlInput1">Mobile Number</label>
-                                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Mobile Number" required>
+                            <div class="mb-3">
+                                <label class="form-label" for="contact-phone">Mobile Number</label>
+                                <input type="tel" id="contact-phone" class="form-control" placeholder="09xxxxxxxxx" required>
                             </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlTextarea1">Message</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                            <div class="mb-3">
+                                <label class="form-label" for="contact-message">Message</label>
+                                <textarea id="contact-message" class="form-control" rows="4" placeholder="Your message"></textarea>
                             </div>
-                            <button class="btn btn-primary w-100 mb-5" type="submit">SEND</button>
+                            <button class="btn btn-primary w-100" type="submit">Send Message</button>
                         </form>
+                        <hr class="my-4">
+                        <div class="text-center">
+                            <p class="mb-2">Find me on</p>
+                            <a href="https://www.facebook.com/joannafaye.manio" target="_blank" class="me-3 text-primary">
+                                <i class="bi bi-facebook fs-3"></i>
+                            </a>
+                            <a href="https://www.instagram.com/itz_fyraeus/" target="_blank" class="me-3 text-danger">
+                                <i class="bi bi-instagram fs-3"></i>
+                            </a>
+                            <a href="https://ph.linkedin.com/in/joanna-faye-manio-9042b9388" target="_blank" class="text-primary">
+                                <i class="bi bi-linkedin fs-3"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

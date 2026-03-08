@@ -7,6 +7,7 @@
 		<!-- Bootstrap Link -->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="./index.css">
+        <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
 		<title>Developer Portfolio</title>
 
@@ -24,21 +25,25 @@
 			<a href="" class="text-light text-decoration-none ms-5">
 				Projects
 			</a>
+            
+            <button id="darkModeToggle" class="btn btn-secondary">Toggle Dark Mode</button>
+
 		</div>
 
+        
         <!-- MAIN Landing Page Start -->
-    <div id="cover" class="container-fluid d-flex align-items-center justify-content-center text-center text-light shadow p-5 min-vh-100">
+    <div id="cover" class="container-fluid bg-dark d-flex align-items-center justify-content-center text-center text-light shadow p-5 min-vh-100">
         <div class="row d-flex flex-column">
             <div class="col col-lg-12">
-                <h1 id="cover-title" class="font-weight-bolder h1 display-1 text-shadow">WELCOME TO JFMDEVFOLIO!</h1>
-                <div class="border border-5 p-3 text-shadow">
-                <h2 >The Impediment of Action, Advance Action.</h2>
-                <i>-Marcus Aurelius</i>
+                <h1 id="cover-title" class="border-glow-primary line anim-typewriter font-weight-bolder h1 display-1 text-shadow">WELCOME TO JFMDEVFOLIO!</h1>
+                <div class="p-3 text-shadow">
+                <h2 class="stoic-text">The Impediment of Action, Advance Action.</h2>
+                <i class="stoic-text">-Marcus Aurelius</i>
                 </div>
                 <div class="d-flex flex-sm-column flex-lg-row w-100 align-items-center justify-content-center text-center mt-5 lg-mt-5">
                     <div class="col col-lg ">
                         <a id="check" class="btn btn-light h-100 w-100
-                        font-weight-bold" href="#aboutMe" type="button">LEARN MORE</a>
+                        font-weight-bold"href="#aboutMe" type="button">LEARN MORE</a>
                     </div>
                 </div>
             </div>
@@ -48,45 +53,43 @@
 
 
         <!-- About Me START -->
-<div class="mt-5 text-center d-flex justify-content-center" id="aboutMe">
+<div class="mt-5 text-center d-flex justify-content-center p-5 section-texture" id="aboutMe">
 	<div class="mx-auto" style="width: 25%;">
-				<img id="profilePicture" class="rounded-circle img-fluid border border-dark" src="https://media.licdn.com/dms/image/v2/D4E03AQFK9QB65-k_qg/profile-displayphoto-scale_200_200/B4EZmn_D5uIQAY-/0/1759459953508?e=2147483647&v=beta&t=qKkl_txNY2oX3sBvExSPV1jTZcpT3Y6r6LdAbWTkFt0"/>
-		<!-- Add a margin(mt) at the top of the profileText div element -->
+				<img id="check" class="img-fluid border border-primary" data-aos="fade-up" src="https://media.licdn.com/dms/image/v2/D4E03AQFK9QB65-k_qg/profile-displayphoto-scale_200_200/B4EZmn_D5uIQAY-/0/1759459953508?e=2147483647&v=beta&t=qKkl_txNY2oX3sBvExSPV1jTZcpT3Y6r6LdAbWTkFt0"/>
 		<div id="profileText" class="mt-3">
-			<!-- Add a blue border at the bottom of the h2 inside the profileText div using bootstrap classes. -->           
-			<h2 class="border-bottom border-primary">
+			<h2 class="hover-line border-bottom border-primary" data-aos="fade-up">
 				Joanna Faye
 			</h2>
-			<!-- Add a margin at the top of the h4 inside the profileText div. -->
-			<!-- Add a bootstrap class to the h4 inside the profileText div to tranform the text to uppercase. -->
-			<h4 class="mt-2 text-uppercase">Full-Stack Web Developer</h4>
+
+			<h4 class="mt-2 text-uppercase" data-aos="fade-up">
+				Computer Engineering
+			</h4>
 		</div>
 		
 	</div>
-	<!-- Add a bootstrap class to center the introduction paragraph element.-->
-	<!-- Add bootstrap class to add a margin at the top of the introduction paragraph element. -->
-	<div id="introduction" class="mt-2 ms-auto me-auto p-2 border shadow" style="width: 50%;">
-		<p> A Third-year Computer Engineering student at the University of the Assumption, 
+	
+	<div id="introduction" class="mt-2 ms-auto me-auto p-2" style="width: 50%;" data-aos="fade-up">
+		<p  class="text-break fs-4" style="text-align: justify;"> A Third-year Computer Engineering student at the University of the Assumption, 
                 continuously learning and exploring circuitry, algorithms, and system design, 
                 embracing change and growth by turning every challenge into a stepping stone 
                 toward becoming a versatile and competent engineer.</p>
-		<div class="stats-row scroll-trigger d-flex">
-                <div class="stat-item">
-                    <span class="stat-number">3</span>
-                    <span class="stat-label">Years Studying<br>Computer Engineering</span>
+		<div class="stats-row scroll-trigger d-flex flex-sm-row flex-column justify-content-center align-items-center mt-4">
+                <div class="stat-item1 ms-0 ms-lg-5" data-aos="fade-up">
+                    <h1 class="text-primary fw-bold">3</h1>
+                    <p class="text-muted">Years Studying Computer Engineering</p>
 				</div>
-                <div class="stat-item">
-                    <span class="stat-number">5+</span>
-                    <span class="stat-label">Projects<br>Completed</span>
+                <div class="stat-item2 ms-0 ms-lg-5" data-aos="fade-up">
+                    <h1 class="text-primary fw-bold">5+</h1>
+                    <p class="text-muted">Projects Completed</p>
                     </div>
-                    <div class="stat-item">
-                    <span class="stat-number">3</span>
-                            <span class="stat-label">Years Experience<br>Organization Leadership</span>
+                    <div class="stat-item3 ms-0 ms-lg-5" data-aos="fade-up">
+                    <h1 class="text-primary fw-bold">3</h1>
+                            <p class="text-muted">Years Experience Organization Leadership</p>
                         </div>
                     </div>
-					<br>
+					
                     <!-- Learn More Button - Links to index.html -->
-                    <a href="./index.html" class="center btn btn-secondary">
+                    <a href="./index.html" class="center btn btn-light border border-primary border-3 mb-4" id="check" type="button">
                         RESUME
                     </a>
                         </div>
@@ -94,75 +97,916 @@
     <!-- ABOUT ME END -->
 
     <!-- TOOLS START -->
-    <div class="d-flex p-3 p-md-5 flex-column justify-content-center align-items-center">
+   <div class="d-flex p-3 p-md-5 flex-column justify-content-center align-items-center bg-dark">
 
-        <h1 class="text-primary display-3 fw-bold">Tools I use</h1>
-        
-        <div class="d-flex p-2">
-            <div class="row flex-md-row flex-column g-4">
-                <div class="col">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/500px-HTML5_logo_and_wordmark.svg.png" class="img-fluid border bg-secondary p-3 p-md-5 tools">
-                </div>
-                <!-- 2 -->
-                <div class="col">
-                    <img src="https://static.vecteezy.com/system/resources/previews/067/565/470/non_2x/bootstrap-logo-rounded-free-png.png" class="img-fluid border bg-secondary p-3 p-md-5 tools">
-                </div>
-                <!-- 3 -->
-                <div class="col">
-                <img src="https://cdn-icons-png.freepik.com/256/5968/5968242.png?semt=ais_white_label" class="img-fluid border bg-secondary p-3 p-md-5 tools">
-                </div>
-                <!-- 4 -->
-                <div class="col">
-                    <img src="https://static.vecteezy.com/system/resources/previews/048/332/150/non_2x/java-programming-language-java-logo-free-png.png" class="img-fluid border bg-secondary p-3 p-md-5 tools">
-                </div>
-                <!-- 5 -->
-                <div class="col">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/960px-Visual_Studio_Code_1.35_icon.svg.png" class="img-fluid border bg-secondary p-3 p-md-5 tools">
-                </div>
-                <!-- 6 -->
-                <div class="col">
-                    <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/autocad-icon.png" class="img-fluid border bg-secondary p-3 p-md-5 tools">
-                </div>
-                <!-- 7 -->
+<svg viewBox="0 0 800 120">
+<text x="50%" y="50%" dy=".35em" text-anchor="middle" class="circuit">Tools I use</text>
+</svg>
 
-            </div>
-            
-        </div>
-    </div>
-    <!-- TOOLS END-->
+<div class="container">
 
-<div id="projects" class="bg-secondary p-5 text-center row image-fluid" style="padding: 3rem; margin-bottom: 3rem;">
+<div class="row g-4 justify-content-center">
 
-	<!-- Add a bootstrap class to the divs inside the projects section which will display each as inline-block. -->
-	<!-- Add a bootstrap class to the divs inside the projects section which will round the corners of the element. -->
-	<!-- Add a bootstrap class to the divs inside the projects section which will add a padding inside the element. -->
-	<!-- Add a bootstrap class to the divs inside the projects section which will make the text light or white inside the element. -->
-	<!-- Add a bootstrap class to the divs inside the projects section which will make the background dark inside the element. --> 
-	<!-- Add a bootstrap class to the divs inside the projects section which will add margins between each divs. -->                        
-	<div class="d-lg-inline-block bg-dark text-light rounded p-4 ms-auto" style="width: 25%;">
-		<!-- Add a bootstrap class to the img element inside each div to disallow it from overflowing. -->
-		<!-- Add a bootstrap class to the h3 element inside each div add a margin at the top of the element. -->
-		<!-- Add a bootstrap class to the p element inside each div add a margin at the top of the element. -->
-		<img src="https://getbootstrap.com/docs/4.0/examples/screenshots/album.png" class="img-fluid">
-		<h3 class="mt-3">My First Project</h3>
-		<p class="mt-3">A simple project made from HTML</p>
-	</div>
-    <!-- second proj -->
-	<div class="d-lg-inline-block bg-dark text-light rounded p-4 ms-5 me-5" style="width: 25%;">
-		<img src="https://getbootstrap.com/docs/4.0/examples/screenshots/jumbotron.png" class="img-fluid">
-		<h3 class="mt-3">My Second Project</h3>
-		<p class="mt-3">A simple project made from CSS</p>
-	</div>
-    <!-- third -->
-	<div class="d-lg-inline-block bg-dark text-light rounded p-4 me-auto" style="width: 25%;">
-		<img src="https://getbootstrap.com/docs/4.0/examples/screenshots/carousel.png" class="img-fluid">
-		<h3 class="mt-3">My Third Project</h3>
-		<p class="mt-3">A simple Bootstrap project.</p>
-	</div>
+<!-- 1 -->
+<div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/500px-HTML5_logo_and_wordmark.svg.png"
+class="tools img-fluid border border-primary border-2 rounded-3 bg-dark p-3 p-md-4"
+style="max-height:120px; object-fit:contain;">
 </div>
 
+<!-- 2 -->
+<div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+<img src="https://static.vecteezy.com/system/resources/previews/067/565/470/non_2x/bootstrap-logo-rounded-free-png.png"
+class="tools img-fluid border border-primary border-2 rounded-3 bg-dark p-3 p-md-4"
+style="max-height:120px; object-fit:contain;">
+</div>
+
+<!-- 3 -->
+<div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+<img src="https://cdn-icons-png.freepik.com/256/5968/5968242.png?semt=ais_white_label"
+class="tools img-fluid border border-primary border-2 rounded-3 bg-dark p-3 p-md-4"
+style="max-height:120px; object-fit:contain;">
+</div>
+
+<!-- 4 -->
+<div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+<img src="https://static.vecteezy.com/system/resources/previews/048/332/150/non_2x/java-programming-language-java-logo-free-png.png"
+class="tools img-fluid border border-primary border-2 rounded-3 bg-dark p-3 p-md-4"
+style="max-height:120px; object-fit:contain;">
+</div>
+
+<!-- 5 -->
+<div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/960px-Visual_Studio_Code_1.35_icon.svg.png"
+class="tools img-fluid border border-primary border-2 rounded-3 bg-dark p-3 p-md-4"
+style="max-height:120px; object-fit:contain;">
+</div>
+
+<!-- 6 -->
+<div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+<img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/autocad-icon.png"
+class="tools img-fluid border border-primary border-2 rounded-3 bg-dark p-3 p-md-4"
+style="max-height:120px; object-fit:contain;">
+</div>
+
+</div>
+
+</div>
+
+</div>
+    <!-- TOOLS END-->
+
+    <!-- EXP Start -->
+ <section class="bg-secondary section-texture timeline-section">
+
+<div class="container">
+
+<h2 class="text-center text-primary fw-bold mb-5">
+Experience Progress
+</h2>
+
+<div class="timeline">
+
+
+<!-- ITEM 1 -->
+
+<div class="row timeline-item align-items-center" data-aos="fade-right">
+
+<div class="col-md-6 timeline-left" >
+<div class="timeline-card">
+<span class="timeline-date">2023</span>
+<div class="timeline-title">Beggining of my CpE Journey</div>
+<p>
+Basic codings and Apps using Python and Java, learning about the fundamentals of computer engineering, leadership experiences, and exploring various tools and technologies in the field. Such as other tools outside of the classroom, like AutoCAD, Canva, and Weebly.
+</p>
+</div>
+</div>
+
+<div class="col-md-6"></div>
+
+<div class="timeline-dot"></div>
+
+</div>
+
+
+<!-- ITEM 2 -->
+
+<div class="row timeline-item align-items-center" data-aos="fade-left">
+
+<div class="col-md-6"></div>
+
+<div class="col-md-6 timeline-right">
+<div class="timeline-card">
+<span class="timeline-date">2024</span>
+<div class="timeline-title">Start of my Hardware and Software Journey</div>
+<p>
+experience in software development, including coding in Java and Python, and hardware experience with Basic Electronics. I have also gained experience in project management and teamwork through various group projects and extracurricular activities.
+</p>
+</div>
+</div>
+
+<div class="timeline-dot"></div>
+
+</div>
+
+
+<!-- ITEM 3 -->
+
+<div class="row timeline-item align-items-center" data-aos="fade-right">
+
+<div class="col-md-6 timeline-left">
+<div class="timeline-card">
+<span class="timeline-date">2025-Present</span>
+<div class="timeline-title">Software Development, Hardware Projects, and Basic Networking</div>
+<p>
+Creation of hardware projects, such as a implementation of Integrated Circuit, and software projects, such as Website development. I have also gained basic knowledge in networking and cybersecurity through coursework and extracurricular activities. I am currently working on improving my skills in software development and hardware design, with the goal of becoming a well-rounded computer engineer.
+</p>
+</div>
+</div>
+
+<div class="col-md-6"></div>
+
+<div class="timeline-dot"></div>
+
+</div>
+
+
+</div>
+</div>
+
+</section>
+<!-- EXP end -->
+
+<!-- Project Start -->
+<section class="py-5 project-section section-texture" id="projects">
+  <div class="container">
+    <div class="text-center mb-5 text-primary border-start border-primary border-5 ps-3 text-dark mx-0 mx-lg-3 my-3 my-lg-0 display-5 fw-bold">
+        <h2 data-aos="fade-right">Projects Portfolio</h2>
+      <p class="text-muted"  data-aos="fade-right">
+        Software Development, Hardware Projects, and Basic Networking
+      </p>
+    </div>
+
+    <!-- Software Projects Slider -->
+    <h4 class="fw-bold mb-3 text-center" data-aos="fade-left">Software Projects</h4>
+    <!-- <div class="slider-wrapper overflow-hidden"> -->
+      <div class="align-items-center justify-content-center gap-4 d-flex flex-column flex-lg-row  gap-4">
+
+        <!-- Software Card 1 -->
+        <div class="col-12 col-md-6 col-lg-2 col-xl-2">
+          <div class="card project-card shadow-sm">
+            <img src="./image/fm.png" class="card-img-top project-img" alt="Software 1">
+            <div class="card-body text-center">
+              <h6 class="fw-bold">Software System 1</h6>
+              <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#softwareModal1">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Software Card 2 -->
+        <div class="col-12 col-md-6 col-lg-2 col-xl-2">
+          <div class="card project-card shadow-sm">
+            <img src="./image/receipt calc.png" class="card-img-top project-img" alt="Software 2">
+            <div class="card-body text-center">
+              <h6 class="fw-bold">Software System 2</h6>
+              <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#softwareModal2">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Software Card 3 -->
+        <div class="col-12 col-md-6 col-lg-2 col-xl-2">
+          <div class="card project-card shadow-sm">
+            <img src="./image/ojt clasroom.png" class="card-img-top project-img" alt="Software 3">
+            <div class="card-body text-center">
+              <h6 class="fw-bold">Software System 3</h6>
+              <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#softwareModal3">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Software Card 4 -->
+        <div class="col-12 col-md-6 col-lg-2 col-xl-2">
+          <div class="card project-card shadow-sm">
+            <img src="https://fayem045.github.io/image/sidebar.png" class="card-img-top project-img" alt="Software 4">
+            <div class="card-body text-center">
+              <h6 class="fw-bold">Software System 4</h6>
+              <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#softwareModal4">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Software Card 5 -->
+        <div class="col-12 col-md-6 col-lg-2 col-xl-2">
+          <div class="card project-card shadow-sm">
+            <img src="./image/1st porty.png" class="card-img-top project-img" alt="Software 5">
+            <div class="card-body text-center">
+              <h6 class="fw-bold">Software System 5</h6>
+              <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#softwareModal5">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- software card 6 -->
+        <div class="col-12 col-md-6 col-lg-2 col-xl-2">
+          <div class="card project-card shadow-sm">
+            <img src="./image/shopping app.png" class="card-img-top project-img" alt="Software 6">
+            <div class="card-body text-center">
+              <h6 class="fw-bold">Software System 6</h6>
+              <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#softwareModal6">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Hardware Projects Slider -->
+     <div class="container">
+    <h4 class="fw-bold mb-3 text-center mt-5" data-aos="fade-left">Hardware Projects</h4>
+    <!-- <div class="slider-wrapper overflow-hidden"> -->
+      <div class="align-items-center justify-content-center gap-4 d-flex flex-column flex-lg-row  gap-4">
+
+        <!-- Hardware Card 1 -->
+        <div class="col-12 col-md-6 col-lg-2 col-xl-2">
+          <div class="card project-card shadow-sm">
+            <img src="https://fayem045.github.io/image/cir.png" class="card-img-top project-img" alt="Hardware 1">
+            <div class="card-body text-center">
+              <h6 class="fw-bold">Hardware 1</h6>
+              <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#hardwareModal1">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hardware Card 2 -->
+        <div class="col-12 col-md-6 col-lg-2 col-xl-2">
+          <div class="card project-card shadow-sm">
+            <img src="./image/power sup[ply.png" class="card-img-top project-img" alt="Hardware 2">
+            <div class="card-body text-center">
+              <h6 class="fw-bold">Hardware 2</h6>
+              <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#hardwareModal2">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hardware Card 3 -->
+        <div class="col-12 col-md-6 col-lg-2 col-xl-2">
+          <div class="card project-card shadow-sm">
+            <img src="./image/op amp.png" class="card-img-top project-img" alt="Hardware 3">
+            <div class="card-body text-center">
+              <h6 class="fw-bold">Hardware 3</h6>
+              <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#hardwareModal3">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hardware Card 4 -->
+        <div class="col-12 col-md-6 col-lg-2 col-xl-2">
+          <div class="card project-card shadow-sm">
+            <img src="./image/xmastree.png" class="card-img-top project-img" alt="Hardware 4">
+            <div class="card-body text-center">
+              <h6 class="fw-bold">Hardware 4</h6>
+              <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#hardwareModal4">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hardware Card 5 -->
+        <div class="col-12 col-md-6 col-lg-2 col-xl-2">
+          <div class="card project-card shadow-sm">
+            <img src="./image/seg.png" class="card-img-top project-img" alt="Hardware 5">
+            <div class="card-body text-center">
+              <h6 class="fw-bold">Hardware 5</h6>
+              <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#hardwareModal5">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Hardware Card 6 -->
+        <div class="col-12 col-md-6 col-lg-2 col-xl-2">
+          <div class="card project-card shadow-sm">
+            <img src="./image/led chaser.png" class="card-img-top project-img" alt="Hardware 6">
+            <div class="card-body text-center">
+              <h6 class="fw-bold">Hardware 6</h6>
+              <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#hardwareModal6">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Project End -->
+
+
+<!-- MODAL SOFT START -->
+ <!-- Software Modal 1 -->
+<div class="modal fade" id="softwareModal1" tabindex="-1" aria-labelledby="softwareModal1Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="softwareModal1Label">File Management System</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row g-4">
+
+          <div class="col-md-6">
+            <img src="./image/fm.png" class="img-fluid rounded shadow-sm">
+          </div>
+
+          <div class="col-md-6">
+            <h5 class="fw-bold">Project Overview</h5>
+            <p class="text-muted">
+              A file management system that allows users to organize, upload,
+              and manage files efficiently. The project focuses on file
+              structure organization and user-friendly interaction.
+            </p>
+
+            <h6 class="fw-bold mt-3">Technologies Used</h6>
+
+            <span class="badge bg-primary me-1 mb-1">Java</span>
+            <span class="badge bg-primary me-1 mb-1">Data Structures</span>
+            <span class="badge bg-primary me-1 mb-1">OOP</span>
+
+            <div class="mt-4">
+              <button class="btn btn-outline-secondary btn-sm" data-bs-dismiss="modal">
+                Close
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- 2nd -->
+ <!-- Software Modal 2 -->
+<div class="modal fade" id="softwareModal2" tabindex="-1" aria-labelledby="softwareModal2Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="softwareModal2Label">Receipt Calculator</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row g-4">
+
+          <div class="col-md-6">
+            <img src="./image/receipt calc.png" class="img-fluid rounded shadow-sm">
+          </div>
+
+          <div class="col-md-6">
+
+            <h5 class="fw-bold">Project Overview</h5>
+
+            <p class="text-muted">
+              A receipt calculator that computes the total price of items,
+              taxes, and change. The system helps simulate real-world
+              cashier transactions and improves accuracy in calculations.
+            </p>
+
+            <h6 class="fw-bold mt-3">Technologies Used</h6>
+
+            <span class="badge bg-primary me-1 mb-1">Java</span>
+            <span class="badge bg-primary me-1 mb-1">Swing</span>
+            <span class="badge bg-primary me-1 mb-1">OOP</span>
+
+            <div class="mt-4">
+              <button class="btn btn-outline-secondary btn-sm" data-bs-dismiss="modal">
+                Close
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- 3rd -->
+ <!-- Software Modal 3 -->
+<div class="modal fade" id="softwareModal3" tabindex="-1" aria-labelledby="softwareModal3Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="softwareModal3Label">OJT Tracker System</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <div class="row g-4">
+
+          <div class="col-md-6">
+            <img src="./image/ojt clasroom.png" class="img-fluid rounded shadow-sm">
+          </div>
+
+          <div class="col-md-6">
+
+            <h5 class="fw-bold">Project Overview</h5>
+
+            <p class="text-muted">
+              A Google Classroom–inspired OJT tracker where administrators
+              can create classes, invite students, upload tasks,
+              and track student progress and attendance.
+            </p>
+
+            <h6 class="fw-bold mt-3">Technologies Used</h6>
+
+            <span class="badge bg-primary me-1 mb-1">HTML</span>
+            <span class="badge bg-primary me-1 mb-1">CSS</span>
+            <span class="badge bg-primary me-1 mb-1">Bootstrap</span>
+            <span class="badge bg-primary me-1 mb-1">JavaScript</span>
+
+            <div class="mt-4">
+              <button class="btn btn-outline-secondary btn-sm" data-bs-dismiss="modal">
+                Close
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 4th -->
+ <!-- Software Modal 4 -->
+<div class="modal fade" id="softwareModal4" tabindex="-1" aria-labelledby="softwareModal4Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="softwareModal4Label">Admin Dashboard</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <div class="row g-4">
+
+          <div class="col-md-6">
+            <img src="https://fayem045.github.io/image/sidebar.png" class="img-fluid rounded shadow-sm">
+          </div>
+
+          <div class="col-md-6">
+
+            <h5 class="fw-bold">Project Overview</h5>
+
+            <p class="text-muted">
+              A responsive admin dashboard interface designed to manage
+              users, activities, and analytics. It features sidebar
+              navigation and clean UI layout for easy data management.
+            </p>
+
+            <h6 class="fw-bold mt-3">Technologies Used</h6>
+
+            <span class="badge bg-primary me-1 mb-1">HTML</span>
+            <span class="badge bg-primary me-1 mb-1">CSS</span>
+            <span class="badge bg-primary me-1 mb-1">Bootstrap</span>
+
+            <div class="mt-4">
+              <button class="btn btn-outline-secondary btn-sm" data-bs-dismiss="modal">
+                Close
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 5th -->
+ <!-- Software Modal 5 -->
+<div class="modal fade" id="softwareModal5" tabindex="-1" aria-labelledby="softwareModal5Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="softwareModal5Label">Portfolio Website</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <div class="row g-4">
+
+          <div class="col-md-6">
+            <img src="./image/1st porty.png" class="img-fluid rounded shadow-sm">
+          </div>
+
+          <div class="col-md-6">
+
+            <h5 class="fw-bold">Project Overview</h5>
+
+            <p class="text-muted">
+              A personal portfolio website that showcases projects,
+              skills, and experience. It highlights responsive design
+              and modern UI to present technical work professionally.
+            </p>
+
+            <h6 class="fw-bold mt-3">Technologies Used</h6>
+
+            <span class="badge bg-primary me-1 mb-1">HTML</span>
+            <span class="badge bg-primary me-1 mb-1">CSS</span>
+            <span class="badge bg-primary me-1 mb-1">Bootstrap</span>
+
+            <div class="mt-4">
+              <button class="btn btn-outline-secondary btn-sm" data-bs-dismiss="modal">
+                Close
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 6th -->
+ <!-- Software Modal 6 -->
+<div class="modal fade" id="softwareModal6" tabindex="-1" aria-labelledby="softwareModal6Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="softwareModal6Label">Shopping Web App</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <div class="row g-4">
+
+          <div class="col-md-6">
+            <img src="./image/shopping app.png" class="img-fluid rounded shadow-sm">
+          </div>
+
+          <div class="col-md-6">
+
+            <h5 class="fw-bold">Project Overview</h5>
+
+            <p class="text-muted">
+              A simple shopping web application that allows users
+              to browse products, add items to cart, and simulate
+              an online purchasing experience.
+            </p>
+
+            <h6 class="fw-bold mt-3">Technologies Used</h6>
+
+            <span class="badge bg-primary me-1 mb-1">HTML</span>
+            <span class="badge bg-primary me-1 mb-1">CSS</span>
+            <span class="badge bg-primary me-1 mb-1">JavaScript</span>
+            <span class="badge bg-primary me-1 mb-1">Bootstrap</span>
+
+            <div class="mt-4">
+              <button class="btn btn-outline-secondary btn-sm" data-bs-dismiss="modal">
+                Close
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- MODAL SOFT END -->
+
+<!-- Bootstrap Modal -->
+<!-- Hardware 6 Modal -->
+ <!-- Hardware 1 Modal -->
+<div class="modal fade" id="hardwareModal1" tabindex="-1" aria-labelledby="hardwareModal1Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="hardwareModal1Label">Basic Circuit Design</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row g-4">
+
+          <div class="col-md-6">
+            <img src="https://fayem045.github.io/image/cir.png" class="img-fluid rounded shadow-sm">
+          </div>
+
+          <div class="col-md-6">
+            <h5 class="fw-bold">Project Overview</h5>
+            <p class="text-muted">
+              This project demonstrates a basic electronic circuit setup using
+              essential components such as resistors, capacitors, and power sources.
+              It focuses on understanding current flow, voltage distribution,
+              and proper breadboard wiring techniques.
+            </p>
+
+            <h6 class="fw-bold mt-3">Components Used</h6>
+            <span class="badge bg-primary me-1 mb-1">Resistors</span>
+            <span class="badge bg-primary me-1 mb-1">Capacitors</span>
+            <span class="badge bg-primary me-1 mb-1">Breadboard</span>
+            <span class="badge bg-primary me-1 mb-1">Power Supply</span>
+
+            <div class="mt-4">
+              <button class="btn btn-outline-secondary btn-sm" data-bs-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- modal2 -->
+ <!-- Hardware 2 Modal -->
+<div class="modal fade" id="hardwareModal2" tabindex="-1" aria-labelledby="hardwareModal2Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="hardwareModal2Label">Power Supply Circuit</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row g-4">
+
+          <div class="col-md-6">
+            <img src="./image/power sup[ply.png" class="img-fluid rounded shadow-sm">
+          </div>
+
+          <div class="col-md-6">
+            <h5 class="fw-bold">Project Overview</h5>
+            <p class="text-muted">
+              This project involves designing a regulated power supply circuit
+              capable of converting AC voltage into stable DC voltage. The circuit
+              demonstrates rectification, filtering, and voltage regulation
+              concepts used in many electronic devices.
+            </p>
+
+            <h6 class="fw-bold mt-3">Components Used</h6>
+            <span class="badge bg-primary me-1 mb-1">Transformer</span>
+            <span class="badge bg-primary me-1 mb-1">Diodes</span>
+            <span class="badge bg-primary me-1 mb-1">Capacitors</span>
+            <span class="badge bg-primary me-1 mb-1">Voltage Regulator</span>
+
+            <div class="mt-4">
+              <button class="btn btn-outline-secondary btn-sm" data-bs-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- modal3 -->
+ <!-- Hardware 3 Modal -->
+<div class="modal fade" id="hardwareModal3" tabindex="-1" aria-labelledby="hardwareModal3Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="hardwareModal3Label">Operational Amplifier Circuit</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row g-4">
+
+          <div class="col-md-6">
+            <img src="./image/op amp.png" class="img-fluid rounded shadow-sm">
+          </div>
+
+          <div class="col-md-6">
+            <h5 class="fw-bold">Project Overview</h5>
+            <p class="text-muted">
+              This project demonstrates the use of an Operational Amplifier
+              (Op-Amp) in building amplifier circuits. It highlights the concept
+              of signal amplification, voltage gain, and feedback configuration
+              commonly used in analog electronics.
+            </p>
+
+            <h6 class="fw-bold mt-3">Components Used</h6>
+            <span class="badge bg-primary me-1 mb-1">Op-Amp IC</span>
+            <span class="badge bg-primary me-1 mb-1">Resistors</span>
+            <span class="badge bg-primary me-1 mb-1">Breadboard</span>
+            <span class="badge bg-primary me-1 mb-1">Power Supply</span>
+
+            <div class="mt-4">
+              <button class="btn btn-outline-secondary btn-sm" data-bs-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Hardware 4 Modal -->
+<!-- Hardware 4 Modal -->
+<div class="modal fade" id="hardwareModal4" tabindex="-1" aria-labelledby="hardwareModal4Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="hardwareModal4Label">Christmas Tree LED Circuit</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row g-4">
+
+          <div class="col-md-6">
+            <img src="./image/xmastree.png" class="img-fluid rounded shadow-sm">
+          </div>
+
+          <div class="col-md-6">
+            <h5 class="fw-bold">Project Overview</h5>
+            <p class="text-muted">
+              This hardware project creates a Christmas tree lighting design
+              using multiple LEDs arranged in a decorative pattern. The circuit
+              demonstrates parallel connections and power distribution while
+              producing a visually appealing lighting effect.
+            </p>
+
+            <h6 class="fw-bold mt-3">Components Used</h6>
+            <span class="badge bg-primary me-1 mb-1">LEDs</span>
+            <span class="badge bg-primary me-1 mb-1">Resistors</span>
+            <span class="badge bg-primary me-1 mb-1">Breadboard</span>
+            <span class="badge bg-primary me-1 mb-1">Power Source</span>
+
+            <div class="mt-4">
+              <button class="btn btn-outline-secondary btn-sm" data-bs-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Hardware 5 Modal -->
+ <!-- Hardware 5 Modal -->
+<div class="modal fade" id="hardwareModal5" tabindex="-1" aria-labelledby="hardwareModal5Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="hardwareModal5Label">7-Segment Display Circuit</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row g-4">
+
+          <div class="col-md-6">
+            <img src="./image/seg.png" class="img-fluid rounded shadow-sm">
+          </div>
+
+          <div class="col-md-6">
+            <h5 class="fw-bold">Project Overview</h5>
+            <p class="text-muted">
+              This project demonstrates the use of a 7-segment display to show
+              numerical values. The circuit involves controlling LED segments
+              to represent digits, commonly used in digital clocks,
+              calculators, and measurement devices.
+            </p>
+
+            <h6 class="fw-bold mt-3">Components Used</h6>
+            <span class="badge bg-primary me-1 mb-1">7-Segment Display</span>
+            <span class="badge bg-primary me-1 mb-1">Resistors</span>
+            <span class="badge bg-primary me-1 mb-1">Breadboard</span>
+            <span class="badge bg-primary me-1 mb-1">Power Supply</span>
+
+            <div class="mt-4">
+              <button class="btn btn-outline-secondary btn-sm" data-bs-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- modal6 -->
+<div class="modal fade" id="hardwareModal6" tabindex="-1" aria-labelledby="hardwareModal6Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="hardwareModal6Label">LED Chaser Circuit</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <div class="row g-4">
+
+          <!-- Image -->
+          <div class="col-md-6">
+            <img src="./image/led chaser.png" class="img-fluid rounded shadow-sm">
+          </div>
+
+          <!-- Description -->
+          <div class="col-md-6">
+
+            <h5 class="fw-bold">Project Overview</h5>
+
+            <p class="text-muted">
+              This project demonstrates a basic LED Chaser circuit where LEDs light up
+              sequentially in a looping pattern. It was designed using electronic
+              components such as IC timers, resistors, capacitors, and LEDs to create
+              a flowing light effect commonly used in decorative lighting and signal
+              indicators.
+            </p>
+
+            <h6 class="fw-bold mt-3">Components Used</h6>
+
+            <span class="badge bg-primary me-1 mb-1">LEDs</span>
+            <span class="badge bg-primary me-1 mb-1">Resistors</span>
+            <span class="badge bg-primary me-1 mb-1">Capacitors</span>
+            <span class="badge bg-primary me-1 mb-1">555 Timer</span>
+            <span class="badge bg-primary me-1 mb-1">Breadboard</span>
+
+            <div class="mt-4">
+              <button class="btn btn-outline-secondary btn-sm" data-bs-dismiss="modal">
+                Close
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- modal end -->
+
 <!-- Contact Section Start -->
-    <div id="connect" class="container-fluid d-lg-flex align-items-center justify-content-center bg-light mt-md-5 text-center min-vh-100 w-100 sm-h-100 text-light">
+    <div id="connect" class="bg-dark container-fluid d-lg-flex align-items-center justify-content-center bg-light mt-md-5 text-center min-vh-100 w-100 sm-h-100 text-light">
         <div class="d-flex flex-lg-row flex-column flex-md-column w-100 container-lg align-items-center justify-content-center">
             <div class="col col-lg-6 sm-mb-5 mb-lg-0 h-100">
                 <iframe class="d-inline-block shadow border-0 map-height-default map-height-sm mt-3 mb-3 w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d493242.1994801147!2d120.65385799999999!3d15.02294655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396f4848d776319%3A0x55a57880b7da26f8!2sPampanga!5e0!3m2!1sen!2sph!4v1772709165586!5m2!1sen!2sph" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -170,7 +1014,7 @@
             <div class="col col-lg-6 mb-3 border border-primary">
                 <div class="d-flex flex-column w-100 h-100 bg-white p-1 p-lg-4 rounded shadow">
                     <div class="col text-dark ">
-                        <h1 id="connect-title" class="text-dark font-weight-bolder display-6 text-left border-dark border-bottom d-inline-block mb-3 mb-lg-4 h1-connect pb-3 pt-5">CONTACT ME</h1>
+                        <h1 id="connect-title" class="hover-line text-dark font-weight-bolder display-6 text-left border-dark border-bottom d-inline-block mb-3 mb-lg-4 h1-connect pb-3 pt-5">CONTACT ME</h1>
                     </div>
                     <div class="col w-100 text-dark">
                         <form class="text-dark text-left font-weight-bold">
@@ -207,7 +1051,18 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // Animation duration in ms
+    once: true,     // Animate only once when scrolled into view
+  });
+</script>
+
 </body>
+
+
+</html>
 
 
 

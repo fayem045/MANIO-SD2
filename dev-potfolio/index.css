@@ -1,6 +1,19 @@
 *{
   font-family: 'Share Tech Mono', monospace !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
 }
+
+/* global centering and overflow control */
+html, body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden; /* no horizontal scroll */
+}
+
 /* hover landing star */
 #cover:hover {
     background-color:  #000 !important;
@@ -72,12 +85,12 @@ body::before {
 
 /* container overlay used from about section through contact */
 .overlay-container {
-  background: rgba(0,0,0,0.5); /* darker shade but transparent */
-  /* half‑inch gap on each side across all breakpoints */
-  padding: 4rem 0.5in;
-  margin: 0 auto;              /* center horizontally */
-  max-width: calc(100% - 1in); /* never touch the viewport edges */
+  background: rgba(0,0,0,0.5); 
+  padding: 4rem 1rem;
+  margin: 0 auto;    
+  max-width: 100%;    /
 }
+
 
 .section-texture::before {
   content: "";

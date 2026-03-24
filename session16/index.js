@@ -26,19 +26,18 @@ if(age >= 18 && city == "cebu"){
 }
 
 //mini-process tpo appreciate if-else
-    // let role = prompt("Please ente your role.").toLocaleLowerCase();//prompt: small screen accept user input.   .toLocaleLowerCase();:para convert magmatch lahat
-// if (role == "admin"){
-//     alert("Welcome to UA portal, Administrator!")
-// }else if(role == "teacher"){
-//     alert("Welcome to Portal, Faculty!")
-// }else if(role == "student"){
-//     alert("Welcome to Portal, student!")
-//     }else{
-//         alert("Enter Valid role!")
-//     }
+    let role = prompt("Please ente your role.").toLocaleLowerCase();//prompt: small screen accept user input.   .toLocaleLowerCase();:para convert magmatch lahat
+if (role == "admin"){
+    alert("Welcome to UA portal, Administrator!")
+}else if(role == "teacher"){
+    alert("Welcome to Portal, Faculty!")
+}else if(role == "student"){
+    alert("Welcome to Portal, student!")
+    }else{
+        alert("Enter Valid role!")
+    }
 //2. Switch-case Statement: SPEED. no logiuc, deretso value
 let day = 7;
-
 switch (day){
     case 1:
         console.log("Monday");

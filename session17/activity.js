@@ -30,7 +30,7 @@ for(let i = 1; i <= input; i++){
 
 
 
-
+//SCRATCH LOGIC
 // for(let i = 1; i <= input; i++){
 //     if(i % 15 == 0){
 //     console.log("COUNT: " + i + "COCO MELON");

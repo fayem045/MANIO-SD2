@@ -199,7 +199,7 @@ console.log(user); //OUTPUT: {name: "Kelvin", gradeLevel: 3, isEnrolled: true}
 alert("Hello world!"); 
 console.log("Hello world!"); //not gopod pract kasi misunderstood ng user na may error sa code kaya mas maganda alert
 
-let completeName = prompt("Enter your complete name: ");//may inpurt
+let completeName = prompt("Enter your complete name: ");//may input
 console.log("Hello, " + completeName);
 
 //Path operations

@@ -1,20 +1,48 @@
 *{
   font-family: 'Share Tech Mono', monospace !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  box-sizing: border-box !important;
+  overflow-x: hidden !important;
+}
+#aboutMe {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.textFit{
+  word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-size: 30px;
+}
+.profile {
+  width: 25%;
 }
 
-/* global centering and overflow control */
-html, body {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow-x: hidden; /* no horizontal scroll */
+.introduction {
+  width: 50%;
+  font-size: 16px;
 }
 
-/* hover landing star */
+/* On small screens: stack and make widths full */
+@media (max-width: 991.98px) { 
+
+  .profile,
+  .introduction {
+    width: 100% !important;
+  }
+}
+/* cover responsive */
+#cover{
+min-height: 100dvh;
+}
+
+/* overlay container start */
+.overlay-container {
+  background: rgba(0,0,0,0.5); 
+  padding: 4rem 1rem;
+  margin: 0 auto;            
+  max-width: 100%;            
+}
+/* overlay container end */
+
+/* hover landing start */
 #cover:hover {
     background-color:  #000 !important;
     color: #0d6efd !important;
@@ -59,10 +87,28 @@ body::before {
 /* Make images uniform: square shape, cropped */
 .project-img {
   width: 100%;      /* full card width */
-  height: 200px;    /* fixed height for all images */
+  height: 120px;    /* fixed height for all images */
   object-fit: cover; /* crop without stretching */
 }
+/* slider sstart */
+.project-slider{
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 10px 0;
+}
 
+.project-slider::-webkit-scrollbar{
+  display: none;
+}
+
+.project-card{
+  min-width: 220px;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+}
+/* slider end */
 
 /* darkmode */
 @media (prefers-color-scheme: dark) {
@@ -86,27 +132,9 @@ body::before {
 /* container overlay used from about section through contact */
 .overlay-container {
   background: rgba(0,0,0,0.5); 
-  padding: 4rem 1rem;
-  margin: 0 auto;    
-  max-width: 100%;    /
-}
-
-
-.section-texture::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-
-  background:
-    linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)),
-    url('./image/icpep.jpg');
-
-  background-size: cover;
-  background-position: center;
-
-  opacity: 0.40;        /* texture strength */
-  z-index: -1;          /* put behind all divs */
-  pointer-events: none; /* prevent blocking clicks */
+  padding: 4rem 0.5in;
+  margin: 0 auto;              
+  max-width: calc(100% - 1in); 
 }
 
 /* animation type start */
@@ -166,7 +194,6 @@ body::before {
   opacity: 0;
   transform: translateY(40px);
   filter: blur(6px);
-
   animation: advanceAction 6s ease forwards;
 }
 
@@ -194,7 +221,7 @@ body::before {
 /* original button/element glow used across layout */
 #check, .check {
   transition: all 0.3s ease;
-  border: 2px solid #0d6efd; /* primary-colored outline */
+  border: 2px solid #0d6efd; 
 }
 
 #check:hover, .check:hover {

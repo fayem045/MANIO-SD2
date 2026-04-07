@@ -44,3 +44,50 @@ console.log(pokemon);
 console.log(pokemon.length);
 //ACCESS THE LAST ELEMENT on the Array
 console.log(pokemon[pokemon.length - 1]);
+
+//[SECTION] MODERN ARRAY MUTATION METHODS
+let fruits = ["Apple", "Banana", "Melon"];
+
+
+//push() -> add an element on the tail of an array
+console.log("Original Array: " + fruits);
+fruits.push("Strawberry"); //invocation of the function
+console.log("Push Method: " + fruits);
+//pop() _> remove an element on the tail of an array
+console.log("Original Array: " + fruits);
+fruits.pop(); //no nee argument because we delete
+fruits.pop(); //melon is removed
+console.log("Pop Method: " + fruits);
+
+//FRONT
+//unshift -> adds an elmenbt on the head part of the array. BEGINING
+console.log("Original Array: " + fruits);
+fruits.unshift("strawberry");
+console.log("Unshift Method: " + fruits);
+fruits.unshift("Grapes", "melon", "Kiwi");
+console.log("Unshift Method(3 elements infront): " + fruits);
+//shift(): removes an element on the head party of an array
+fruits.shift();
+fruits.shift();
+console.log("Shift Method(remove head element): " + fruits);
+
+//sort() -> sort an elemenmnt in an array. LETTERS AND NUMBERS
+fruits.sort();
+console.log(fruits);
+
+//REVERS() -> sorts in revers manner
+fruits.reverse();
+console.log(fruits);
+
+//SPECIFIC INDEX
+//splice() -> adds/remove an element in specified index
+fruits.splice(1,2, "Blue berry");// from index 1, tanggal 2
+console.log(fruits);
+
+fruits.splice(1,1)//delete lang completely
+console.log(fruits);
+
+//forEach -> read each element inside the array
+fruits.forEach((x) =>{ //x any variable, doon lagay after basahin
+    console.log(x);
+}) // =>(arrow function): no need to put func, it is func

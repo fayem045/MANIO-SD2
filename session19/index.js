@@ -67,11 +67,28 @@ function checkRemarks(score){
     }
 }
 
-let registration(name, age){
+let registration = function(name, age){
     if(age <= 17){
         console.log("Sorry, you cannot register.");
     }else{
-        console.log(`${name} please proceed to the next step. `);
-        return age;
+        console.log(`${name} please proceed to the next step `);
+        return age; // return should be last part kasi disreagard process if taas
     }
 }
+
+let value = registration("John Doe", 26);
+console.log("AGE: " + value);
+
+function checkAge(age){
+    if(age <= 17){
+        console.log("You cannot proceed!");
+    }else if (age <= 30){
+        console.log("You can apply for basic account.");
+    }else{
+        console.log("You can apply for premium account.");
+    }
+}
+
+checkAge(value);
+
+

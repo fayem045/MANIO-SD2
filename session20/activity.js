@@ -22,12 +22,15 @@ function addFriend(name){
 //Remove specific friends -> using their name
 //remove/unfriend(funcname)
 function unfriend(name){
-    let friendsList = friendsList .indexOf(name.toLocaleUpperCase);
-    
-    if(friendsList  <= 1){
-        friendsList.splice(friendsList, 1);
-        console.log(`You Unfriend ${name}`);
+    let friendsList = friends.findIndex(friend => 
+        friend === name.toUpperCase()
+    );
+     if(friendsList !== -1){
+        friends.splice(friendsList, 1);
+        console.log(`${name.toUpperCase()} was unfriended.`);
+    } else if(friends.length > 0){  
+        console.log(`You don't have any friend named ${name.toUpperCase()}.`);
     }else{
-        console.log("You don't have any friend.");
+        console.log("You don't have any friends. Open yourself to new people.");
     }
 }

@@ -22,7 +22,7 @@ db.on("error", () => console.error.bind(console, "Cannot connect to MongoDB."));
 // Check if connection is okay
 db.once("open", () => console.log("MongoDB Atlas Connection Succcess!"));
 
-//Schema -> blueprint
+//Schema -> blueprint. making sure na align ung data
 
 const taskSchema = new mongoose.Schema({
     name: String,
@@ -32,12 +32,14 @@ const taskSchema = new mongoose.Schema({
     }
 })
 
-//Model
+//Model: check if same data inouted because it create database. delivery of data
 const Task = mongoose.model("Task", taskSchema);
 
-// Middewares
-server.use(express.json());
-server.use(express.urlencoded({extended: true}));
+// Middewares: code na may "use"
+server.use(express.json());//express: accepting data in json format only
+server.use(express.urlencoded({extended: true})); 
+
+//2 way: req and response
 
 
 server.get("/home", (req, res) => {
@@ -51,6 +53,7 @@ server.get("/error", (req, res) => {
     })
 })
 
+//if manual this start
 server.post("/tasks/add", (req, res) => {
 
     Task.findOne({name: req.body.name}).then((result) => { //called task.findOne():if maynahanap, mapunta s RESULT na parameters. ADD ERR as parameter
@@ -65,7 +68,7 @@ server.post("/tasks/add", (req, res) => {
                 if(saveErr){
                     res.send("There is an error saving the task.");
                 }else{
-                    res.status(201).send({
+                    res.status(201).send({ // status, heto ung response from the server sa postman(para maknows na add agad, if no:loading loop)
                         code: 201,
                         message: "Task is now added!",
                         data: savedTask
@@ -77,14 +80,13 @@ server.post("/tasks/add", (req, res) => {
 
     
 })
-
-
-
+//if manual this end: it will take 5mins vs ai 1min
+//PUT FORMAT IN AI, and endpoint
 
 server.listen(port, () => console.log(`Server is now running at port ${port}.`))
 
 
-
+//archiving(hard delete) and unchriving(softdeletion)
 
 
 

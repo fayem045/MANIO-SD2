@@ -140,13 +140,137 @@ server.post("/tasks/:taskId/mark-complete", (req, res) => {
     });
 });
 
+//ADD ALL. "get":hhtp point. 
+server.get("/tasks/all", (req, res) => {
+    Task.find({}).then((result, err) => {
+        if(err){
+            res.send("There is an error fetching all tasks.");
+        }else{
+            res.status(200).send({
+                code: 200,
+                message: "Here are all tasks.",
+                count: result.length,
+                data: result
+            });
+        }
+    })
+})
+//vompleted and pending
+server.get("/tasks/all/completed", (req, res) => {
+    Task.find({status: "complete"}).then((result, err) => {
+        if(err){
+            res.send("There is an error fetching all completed tasks.");
+        }else{
+            res.status(200).send({
+                code: 200,
+                message: "Here are all completed tasks.",
+                count: result.length,
+                data: result
+            });
+        }
+    })
+})
+
+server.get("/tasks/all/pending", (req, res) => {
+    Task.find({status: "pending"}).then((result, err) => {
+        if(err){
+            res.send("There is an error fetching all pending tasks.");
+        }else{
+            res.status(200).send({
+                code: 200,
+                message: "Here are all pending tasks.",
+                count: result.length,
+                data: result
+            });
+        }
+    })
+})
+
+server.get("/tasks/all/archived", (req, res) => {
+    Task.find({isActive: false}).then((result, err) => {
+        if(err){
+            res.send("There is an error fetching all archived tasks.");
+        }else{
+            res.status(200).send({
+                code: 200,
+                message: "Here are all archived tasks.",
+                count: result.length,
+                data: result
+            });
+        }
+    })
+})
+
+server.patch("/tasks/active/:taskId", (req, res) => {
+    Task.findOne({_id: req.params.taskId}).then((result, err) => {
+        if(result == null){
+            res.send("Task not found. Cannot update active status!");
+        }else{
+            if(result.isActive == false){
+                result.isActive = true;
+            }else{
+                result.isActive = false;
+            }
+
+            result.save().then((updatedTask, updateErr) => {
+                if(updateErr){
+                    res.send("There is an error updating task active status.");
+                }else{
+                    res.status(200).send({
+                        code: 200,
+                        message: "Task active status is now updated!",
+                        status: updatedTask.isActive,
+                        data: updatedTask
+                    });
+                }
+            })
+        }
+    })
+})
+
+server.delete("/task/delete/:taskId", (req, res) => {
+    Task.deleteOne({ _id: req.params.taskId }).then((result, err) => {
+        if (err) {
+            res.send("There is an error deleting the task.");
+        } else {
+            res.status(200).send({
+                code: 200,
+                message: "Task is now deleted!",
+                data: result
+            });
+        }
+    });
+});
+
+//archiving(hard delete) and unchriving(softdeletion). switch on and off
+//"isActive: false"=archived, "isActive: true"=unarchived. "delete"=hard delete, "update"=soft delete
+//for upodates
+//patch: maliit na item only
+//update: palit buo,name,age...
+
+
+
 //if manual this end: it will take 5mins vs ai 1min
 //PUT FORMAT IN AI, and endpoint
 
 server.listen(port, () => console.log(`Server is now running at port ${port}.`))
 
 
-//archiving(hard delete) and unchriving(softdeletion)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //PROMPT:
